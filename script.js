@@ -154,22 +154,22 @@ const Nav = (() => {
    * Aquí conectamos eventos con funciones
    * Es el "arranque" del módulo Nav
    */
-  function init() {
+    function init() {
 
-    // Click en hamburguesa abre menú
-    hamburger.addEventListener('click', toggleMenu);
+      if (hamburger && navLinks) {
 
-    // Click en cualquier link cierra el menú
-    navLinks.querySelectorAll('a').forEach((link) =>
-      link.addEventListener('click', closeMenu)
-    );
+        hamburger.addEventListener('click', toggleMenu);
 
-    // Activamos scroll spy
-    initScrollSpy();
+        navLinks.querySelectorAll('a').forEach((link) =>
+          link.addEventListener('click', closeMenu)
+        );
 
-    // Activamos efecto del navbar
-    initScrollBorder();
-  }
+      }
+
+      initScrollSpy();
+      initScrollBorder();
+
+    }
 
   return { init };
 
@@ -342,4 +342,16 @@ window.addEventListener("load", () => {
   if (localStorage.getItem("theme") === "light") {
     document.body.classList.add("light-mode");
   }
+});
+document.addEventListener("DOMContentLoaded", () => {
+
+  const dropdown = document.querySelector(".dropdown");
+  const dropdownBtn = document.querySelector(".dropdown-btn");
+
+  if (dropdownBtn) {
+    dropdownBtn.addEventListener("click", () => {
+      dropdown.classList.toggle("active");
+    });
+  }
+
 });
