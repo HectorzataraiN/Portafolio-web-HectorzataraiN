@@ -639,8 +639,8 @@ body.light-mode .hero-glow--green {
 .hero-inner {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 9rem;
+  justify-content: space-between;
+  gap: 4rem;
 }
 
 /* texto */
@@ -732,7 +732,7 @@ body.light-mode .hero-badge {
   margin-bottom: 1.5rem;
   animation: fadeUp 0.8s 0.1s ease both;
   display: inline-block;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .hero-title .line   { display: block; font-size: 3.5rem }
@@ -1578,4 +1578,94 @@ body.light-mode {
   --muted: #5a5a66;
   --border: rgba(0,0,0,0.1);
   --accent: #00b894;
+}
+/* =========================================
+   HERO RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  #home {
+    padding-top: 7rem;
+    text-align: center;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-title {
+    white-space: normal;
+  }
+
+  .hero-title .line {
+    font-size: 2.2rem;
+  }
+
+  .hero-title .accent {
+    font-size: 3rem;
+  }
+
+  .hero-title .dim {
+    font-size: 2rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 220px;
+    max-width: 100%;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+
+  .hero-badge {
+    font-size: 0.72rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero-title .line {
+    font-size: 1.8rem;
+  }
+
+  .hero-title .accent {
+    font-size: 2.4rem;
+  }
+
+  .hero-title .dim {
+    font-size: 1.6rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 180px;
+  }
 }
