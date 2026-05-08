@@ -218,8 +218,8 @@ git push
 
     <div class="projects-header">
       <div>
-        <p class="section-label">Proyectos</p>
-        <h2 id="projects-title" class="section-title">Trabajo selecto.</h2>
+        <p class="section-label">Tecnologías</p>
+        <h2 id="projects-title" class="section-title">Especialidades</h2>
       </div>
       <a href="#contact" class="btn btn-outline">Ver todos →</a>
     </div>
@@ -349,7 +349,7 @@ git push
             para optimizar procesos.
           </p>
           <div class="card-actions">
-            <a href="#" class="btn-sm btn-sm-primary" aria-label="Ver demo de ArchFlow">Demo →</a>
+            <a href="#" class="btn-sm btn-sm-primary" aria-label="Ver demo de ArchFlow">Ver más →</a>
             <a href="#" class="btn-sm btn-sm-ghost" aria-label="Ver código de ArchFlow en GitHub">GitHub</a>
           </div>
         </div>
@@ -374,7 +374,7 @@ git push
             apoyar la toma de decisiones.
           </p>
           <div class="card-actions">
-            <a href="#" class="btn-sm btn-sm-primary" aria-label="Ver demo de GreenTrace">Demo →</a>
+            <a href="#" class="btn-sm btn-sm-primary" aria-label="Ver demo de GreenTrace">Ver más →</a>
             <a href="#" class="btn-sm btn-sm-ghost" aria-label="Ver código de GreenTrace en GitHub">GitHub</a>
           </div>
         </div>
@@ -382,7 +382,1205 @@ git push
 
     </div>
   </section>
+<!-- ================================================
+     PROYECTOS POR TECNOLOGÍA
+     Sección con tabs por herramienta.
+     Cada tab muestra su propio grid de tarjetas.
+================================================ -->
+<section id="tech-projects" aria-labelledby="tech-projects-title">
 
+  <!-- Etiqueta superior verde -->
+  <p class="section-label">Por herramienta</p>
+
+  <!-- Título principal de la sección -->
+  <h2 id="tech-projects-title" class="section-title">
+    Proyectos por<br />tecnología.
+  </h2>
+
+  <!-- ──────────────────────────────────────────
+       TABS DE NAVEGACIÓN
+       Cada botón activa un panel distinto.
+       data-target debe coincidir con el id del panel.
+  ────────────────────────────────────────────── -->
+  <div class="tech-tabs" role="tablist" aria-label="Filtrar proyectos por tecnología">
+
+    <button class="tech-tab active" role="tab" aria-selected="true" data-target="tab-excel">
+      <img src="assets/excel.png" alt=""> Excel
+    </button>
+
+    <button class="tech-tab" role="tab" aria-selected="false" data-target="tab-powerbi">
+      <img src="assets/powerbi.webp" alt=""> Power BI
+    </button>
+
+    <button class="tech-tab" role="tab" aria-selected="false" data-target="tab-sap">
+      <img src="assets/sap.png" alt=""> SAP
+    </button>
+
+    <button class="tech-tab" role="tab" aria-selected="false" data-target="tab-web">
+      <!-- Si tienes un icono de HTML/Web cámbia el src -->
+      <span aria-hidden="true">🌐</span> Web
+    </button>
+
+    <button class="tech-tab" role="tab" aria-selected="false" data-target="tab-n8n">
+      <img src="assets/n8n.webp" alt=""> n8n
+    </button>
+
+    <button class="tech-tab" role="tab" aria-selected="false" data-target="tab-datos">
+      <img src="assets/data.png" alt=""> Datos
+    </button>
+
+  </div><!-- /tech-tabs -->
+
+
+  <!-- ══════════════════════════════════════════
+       PANEL — EXCEL
+       10 tarjetas de proyectos con Excel.
+       Cambia título, descripción, tags y links.
+  ══════════════════════════════════════════ -->
+  <div class="tech-panel active" id="tab-excel" role="tabpanel">
+    <div class="tech-grid">
+
+      <!-- Tarjeta 1 -->
+      <article class="mini-card reveal">
+        <!-- Imagen de portada del proyecto -->
+        <div class="mini-card-thumb mini-thumb-excel">
+          <img src="assets/excel.png" alt="Excel" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <!-- Tags de tecnologías usadas -->
+          <ul class="card-meta" role="list">
+            <li class="tag">Tablas dinámicas</li>
+            <li class="tag">Fórmulas</li>
+          </ul>
+          <!-- Título del proyecto -->
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <!-- Descripción breve -->
+          <p class="mini-card-desc">Breve descripción de qué hace este proyecto y qué problema resuelve.</p>
+          <!-- Botones de acción -->
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary" aria-label="Ver más sobre este proyecto">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost" aria-label="Ver código en GitHub">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 2 -->
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-excel">
+          <img src="assets/excel.png" alt="Excel" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Power Query</li>
+            <li class="tag">Macros</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 3 -->
+      <article class="mini-card reveal reveal-delay-2">
+        <div class="mini-card-thumb mini-thumb-excel">
+          <img src="assets/excel.png" alt="Excel" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Gráficas</li>
+            <li class="tag">Dashboard</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 4 -->
+      <article class="mini-card reveal reveal-delay-3">
+        <div class="mini-card-thumb mini-thumb-excel">
+          <img src="assets/excel.png" alt="Excel" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">VLOOKUP</li>
+            <li class="tag">Condicionales</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 5 -->
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-excel">
+          <img src="assets/excel.png" alt="Excel" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Automatización</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 6 -->
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-excel">
+          <img src="assets/excel.png" alt="Excel" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Reportes</li>
+            <li class="tag">KPIs</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 7 -->
+      <article class="mini-card reveal reveal-delay-2">
+        <div class="mini-card-thumb mini-thumb-excel">
+          <img src="assets/excel.png" alt="Excel" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Análisis</li>
+            <li class="tag">Limpieza</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 8 -->
+      <article class="mini-card reveal reveal-delay-3">
+        <div class="mini-card-thumb mini-thumb-excel">
+          <img src="assets/excel.png" alt="Excel" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Pivot Tables</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 9 -->
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-excel">
+          <img src="assets/excel.png" alt="Excel" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Formularios</li>
+            <li class="tag">VBA</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 10 -->
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-excel">
+          <img src="assets/excel.png" alt="Excel" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Finanzas</li>
+            <li class="tag">Presupuesto</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /tech-grid -->
+  </div><!-- /tab-excel -->
+
+
+  <!-- ══════════════════════════════════════════
+       PANEL — POWER BI
+  ══════════════════════════════════════════ -->
+  <div class="tech-panel" id="tab-powerbi" role="tabpanel">
+    <div class="tech-grid">
+
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-powerbi">
+          <img src="assets/powerbi.webp" alt="Power BI" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">DAX</li>
+            <li class="tag">Dashboard</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-powerbi">
+          <img src="assets/powerbi.webp" alt="Power BI" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Power Query</li>
+            <li class="tag">KPIs</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-2">
+        <div class="mini-card-thumb mini-thumb-powerbi">
+          <img src="assets/powerbi.webp" alt="Power BI" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Modelo estrella</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-3">
+        <div class="mini-card-thumb mini-thumb-powerbi">
+          <img src="assets/powerbi.webp" alt="Power BI" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Ventas</li>
+            <li class="tag">Reportes</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-powerbi">
+          <img src="assets/powerbi.webp" alt="Power BI" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Finanzas</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-powerbi">
+          <img src="assets/powerbi.webp" alt="Power BI" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Logística</li>
+            <li class="tag">Mapa</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-2">
+        <div class="mini-card-thumb mini-thumb-powerbi">
+          <img src="assets/powerbi.webp" alt="Power BI" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">RLS</li>
+            <li class="tag">Roles</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-3">
+        <div class="mini-card-thumb mini-thumb-powerbi">
+          <img src="assets/powerbi.webp" alt="Power BI" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">API REST</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-powerbi">
+          <img src="assets/powerbi.webp" alt="Power BI" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">RRHH</li>
+            <li class="tag">Indicadores</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-powerbi">
+          <img src="assets/powerbi.webp" alt="Power BI" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Marketing</li>
+            <li class="tag">Tendencias</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div><!-- /tab-powerbi -->
+
+
+  <!-- ══════════════════════════════════════════
+       PANEL — SAP
+  ══════════════════════════════════════════ -->
+  <div class="tech-panel" id="tab-sap" role="tabpanel">
+    <div class="tech-grid">
+
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-sap">
+          <img src="assets/sap.png" alt="SAP" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">MM</li>
+            <li class="tag">Inventario</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-sap">
+          <img src="assets/sap.png" alt="SAP" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">FI</li>
+            <li class="tag">Finanzas</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-2">
+        <div class="mini-card-thumb mini-thumb-sap">
+          <img src="assets/sap.png" alt="SAP" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">CO</li>
+            <li class="tag">Costos</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-3">
+        <div class="mini-card-thumb mini-thumb-sap">
+          <img src="assets/sap.png" alt="SAP" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">SD</li>
+            <li class="tag">Ventas</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-sap">
+          <img src="assets/sap.png" alt="SAP" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">PP</li>
+            <li class="tag">Producción</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-sap">
+          <img src="assets/sap.png" alt="SAP" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">ABAP</li>
+            <li class="tag">Reports</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-2">
+        <div class="mini-card-thumb mini-thumb-sap">
+          <img src="assets/sap.png" alt="SAP" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Consultas</li>
+            <li class="tag">SAP GUI</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-3">
+        <div class="mini-card-thumb mini-thumb-sap">
+          <img src="assets/sap.png" alt="SAP" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Integración</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-sap">
+          <img src="assets/sap.png" alt="SAP" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Logística</li>
+            <li class="tag">WM</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-sap">
+          <img src="assets/sap.png" alt="SAP" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">HR</li>
+            <li class="tag">Nómina</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div><!-- /tab-sap -->
+
+
+  <!-- ══════════════════════════════════════════
+       PANEL — DESARROLLOS WEB
+  ══════════════════════════════════════════ -->
+  <div class="tech-panel" id="tab-web" role="tabpanel">
+    <div class="tech-grid">
+
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-web">
+          <!-- Si tienes screenshot del proyecto úsalo aquí -->
+          <span class="mini-thumb-emoji" aria-hidden="true">🌐</span>
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">HTML</li>
+            <li class="tag">CSS</li>
+            <li class="tag">JS</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver demo →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-web">
+          <span class="mini-thumb-emoji" aria-hidden="true">🌐</span>
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Responsive</li>
+            <li class="tag">API</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver demo →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-2">
+        <div class="mini-card-thumb mini-thumb-web">
+          <span class="mini-thumb-emoji" aria-hidden="true">🌐</span>
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Formulario</li>
+            <li class="tag">Validación</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver demo →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-3">
+        <div class="mini-card-thumb mini-thumb-web">
+          <span class="mini-thumb-emoji" aria-hidden="true">🌐</span>
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Landing Page</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver demo →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-web">
+          <span class="mini-thumb-emoji" aria-hidden="true">🌐</span>
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Portafolio</li>
+            <li class="tag">Animaciones</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver demo →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-web">
+          <span class="mini-thumb-emoji" aria-hidden="true">🌐</span>
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Dashboard</li>
+            <li class="tag">Charts</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver demo →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-2">
+        <div class="mini-card-thumb mini-thumb-web">
+          <span class="mini-thumb-emoji" aria-hidden="true">🌐</span>
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">CRUD</li>
+            <li class="tag">LocalStorage</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver demo →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-3">
+        <div class="mini-card-thumb mini-thumb-web">
+          <span class="mini-thumb-emoji" aria-hidden="true">🌐</span>
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Dark Mode</li>
+            <li class="tag">UX</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver demo →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-web">
+          <span class="mini-thumb-emoji" aria-hidden="true">🌐</span>
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">E-commerce</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver demo →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-web">
+          <span class="mini-thumb-emoji" aria-hidden="true">🌐</span>
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Blog</li>
+            <li class="tag">SEO</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver demo →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div><!-- /tab-web -->
+
+
+  <!-- ══════════════════════════════════════════
+       PANEL — N8N
+  ══════════════════════════════════════════ -->
+  <div class="tech-panel" id="tab-n8n" role="tabpanel">
+    <div class="tech-grid">
+
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-n8n">
+          <img src="assets/n8n.webp" alt="n8n" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Webhooks</li>
+            <li class="tag">API</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-n8n">
+          <img src="assets/n8n.webp" alt="n8n" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">WhatsApp</li>
+            <li class="tag">Gmail</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-2">
+        <div class="mini-card-thumb mini-thumb-n8n">
+          <img src="assets/n8n.webp" alt="n8n" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Agente IA</li>
+            <li class="tag">OpenAI</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-3">
+        <div class="mini-card-thumb mini-thumb-n8n">
+          <img src="assets/n8n.webp" alt="n8n" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Google Sheets</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-n8n">
+          <img src="assets/n8n.webp" alt="n8n" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Slack</li>
+            <li class="tag">Notificaciones</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-n8n">
+          <img src="assets/n8n.webp" alt="n8n" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">CRM</li>
+            <li class="tag">Leads</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-2">
+        <div class="mini-card-thumb mini-thumb-n8n">
+          <img src="assets/n8n.webp" alt="n8n" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Scraping</li>
+            <li class="tag">HTTP</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-3">
+        <div class="mini-card-thumb mini-thumb-n8n">
+          <img src="assets/n8n.webp" alt="n8n" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Automatización</li>
+            <li class="tag">Reportes</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-n8n">
+          <img src="assets/n8n.webp" alt="n8n" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Telegram Bot</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-n8n">
+          <img src="assets/n8n.webp" alt="n8n" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Outlook</li>
+            <li class="tag">Calendar</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div><!-- /tab-n8n -->
+
+
+  <!-- ══════════════════════════════════════════
+       PANEL — ANÁLISIS DE DATOS
+  ══════════════════════════════════════════ -->
+  <div class="tech-panel" id="tab-datos" role="tabpanel">
+    <div class="tech-grid">
+
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-datos">
+          <img src="assets/data.png" alt="Datos" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Python</li>
+            <li class="tag">pandas</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-datos">
+          <img src="assets/data.png" alt="Datos" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">MySQL</li>
+            <li class="tag">Consultas</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-2">
+        <div class="mini-card-thumb mini-thumb-datos">
+          <img src="assets/data.png" alt="Datos" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Google Colab</li>
+            <li class="tag">EDA</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-3">
+        <div class="mini-card-thumb mini-thumb-datos">
+          <img src="assets/data.png" alt="Datos" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Matplotlib</li>
+            <li class="tag">Visualización</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-datos">
+          <img src="assets/data.png" alt="Datos" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Limpieza</li>
+            <li class="tag">ETL</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-datos">
+          <img src="assets/data.png" alt="Datos" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Regresión</li>
+            <li class="tag">ML</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-2">
+        <div class="mini-card-thumb mini-thumb-datos">
+          <img src="assets/data.png" alt="Datos" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">NumPy</li>
+            <li class="tag">Estadística</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-3">
+        <div class="mini-card-thumb mini-thumb-datos">
+          <img src="assets/data.png" alt="Datos" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Seaborn</li>
+            <li class="tag">Heatmap</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal">
+        <div class="mini-card-thumb mini-thumb-datos">
+          <img src="assets/data.png" alt="Datos" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">CSV</li>
+            <li class="tag">Transformación</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="mini-card reveal reveal-delay-1">
+        <div class="mini-card-thumb mini-thumb-datos">
+          <img src="assets/data.png" alt="Datos" class="mini-thumb-logo">
+        </div>
+        <div class="mini-card-body">
+          <ul class="card-meta" role="list">
+            <li class="tag">Web Scraping</li>
+            <li class="tag">BeautifulSoup</li>
+          </ul>
+          <h3 class="mini-card-title">Nombre del proyecto</h3>
+          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <div class="card-actions">
+            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
+            <a href="#" class="btn-sm btn-sm-ghost">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div><!-- /tab-datos -->
+
+</section><!-- /tech-projects -->
 
   <!-- ================================================
        CONTACTO

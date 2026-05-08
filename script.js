@@ -355,3 +355,50 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+/* ==========================================================================
+   TABS — PROYECTOS POR TECNOLOGÍA
+   
+   Lógica:
+   1. Al hacer click en un tab, quitamos "active" de todos
+   2. Añadimos "active" al tab clickeado
+   3. Ocultamos todos los paneles
+   4. Mostramos solo el panel cuyo id coincide con data-target
+   ========================================================================== */
+
+(function initTechTabs() {
+
+  // Selecciona todos los botones tab
+  const tabs = document.querySelectorAll('.tech-tab');
+
+  // Selecciona todos los paneles de contenido
+  const panels = document.querySelectorAll('.tech-panel');
+
+  // Si no hay tabs en la página, no hace nada
+  if (!tabs.length) return;
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+
+      // ── Paso 1: Desactivar todos los tabs ──
+      tabs.forEach((t) => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+
+      // ── Paso 2: Ocultar todos los paneles ──
+      panels.forEach((p) => p.classList.remove('active'));
+
+      // ── Paso 3: Activar el tab clickeado ──
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+
+      // ── Paso 4: Mostrar el panel correspondiente ──
+      // data-target en el botón debe coincidir con el id del panel
+      const targetId = tab.dataset.target;
+      const targetPanel = document.getElementById(targetId);
+      if (targetPanel) targetPanel.classList.add('active');
+
+    });
+  });
+
+})();
