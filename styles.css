@@ -887,7 +887,7 @@ body.light-mode .tech-tab.active { color: #fff; }
 /* Grid */
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
 }
 
@@ -900,6 +900,8 @@ body.light-mode .tech-tab.active { color: #fff; }
   overflow: hidden;
   background: var(--surface);
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  width: 100%;
+  max-width: 280px;
 }
 .mini-card:hover {
   transform: translateY(-4px);
@@ -928,7 +930,7 @@ body.light-mode .mini-card:hover { box-shadow: 0 8px 24px rgba(0, 155, 114, 0.1)
 .mini-thumb2-excel   { 
   background:
     linear-gradient(rgba(33,115,70,0.55), rgba(26,92,55,0.55)),
-    url("assets/dash-pizzeria.png");
+    url("assets/Dashboard-deserción.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -936,7 +938,7 @@ body.light-mode .mini-card:hover { box-shadow: 0 8px 24px rgba(0, 155, 114, 0.1)
 .mini-thumb3-excel   { 
   background:
     linear-gradient(rgba(33,115,70,0.55), rgba(26,92,55,0.55)),
-    url("assets/dash-pizzeria.png");
+    url("assets/dashboard-tennis.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -944,7 +946,7 @@ body.light-mode .mini-card:hover { box-shadow: 0 8px 24px rgba(0, 155, 114, 0.1)
 .mini-thumb4-excel   { 
   background:
     linear-gradient(rgba(33,115,70,0.55), rgba(26,92,55,0.55)),
-    url("assets/dash-pizzeria.png");
+    url("assets/dashboard-contoso.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -985,7 +987,7 @@ body.light-mode .mini-card:hover { box-shadow: 0 8px 24px rgba(0, 155, 114, 0.1)
   line-height: 1.5;
   margin: 0;
   overflow: hidden;
-  max-height: 4.5em;
+  max-height: 15em;
 }
 .mini-card-body .card-actions {
   display: flex;
