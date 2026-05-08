@@ -915,8 +915,40 @@ body.light-mode .mini-card:hover { box-shadow: 0 8px 24px rgba(0, 155, 114, 0.1)
   align-items: center;
   justify-content: center;
   height: 90px;
+
 }
-.mini-thumb-excel   { background: linear-gradient(135deg, #1a5c37, #217346); }
+.mini-thumb1-excel   { 
+  background:
+    linear-gradient(rgba(33,115,70,0.55), rgba(26,92,55,0.55)),
+    url("assets/dash-pizzeria.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mini-thumb2-excel   { 
+  background:
+    linear-gradient(rgba(33,115,70,0.55), rgba(26,92,55,0.55)),
+    url("assets/dash-pizzeria.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mini-thumb3-excel   { 
+  background:
+    linear-gradient(rgba(33,115,70,0.55), rgba(26,92,55,0.55)),
+    url("assets/dash-pizzeria.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mini-thumb4-excel   { 
+  background:
+    linear-gradient(rgba(33,115,70,0.55), rgba(26,92,55,0.55)),
+    url("assets/dash-pizzeria.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .mini-thumb-powerbi { background: linear-gradient(135deg, #d4a017, #f2a900); }
 .mini-thumb-sap     { background: linear-gradient(135deg, #004a8f, #0070d1); }
 .mini-thumb-web     { background: linear-gradient(135deg, #b03a12, #e44d26); }
