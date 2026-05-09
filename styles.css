@@ -951,9 +951,31 @@ body.light-mode .mini-card:hover { box-shadow: 0 8px 24px rgba(0, 155, 114, 0.1)
   background-position: center;
   background-repeat: no-repeat;
 }
-.mini-thumb-powerbi { background: linear-gradient(135deg, #d4a017, #f2a900); }
+.mini-thumb1-powerbi { 
+    background:
+    linear-gradient(rgba(242, 200, 17, 0.55),rgba(201, 163, 0, 0.55)),
+    url("assets/dashboard-gastos-RG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mini-thumb2-powerbi { 
+    background:
+    linear-gradient(rgba(242, 200, 17, 0.55),rgba(201, 163, 0, 0.55)),
+    url("assets/dashboard-gatito-petshop.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .mini-thumb-sap     { background: linear-gradient(135deg, #004a8f, #0070d1); }
-.mini-thumb-web     { background: linear-gradient(135deg, #b03a12, #e44d26); }
+.mini-thumb1-web     { 
+  background:
+  linear-gradient(rgba(176, 58, 18, 0.55),rgba(228, 77, 38, 0.55)),
+  url("assets/captura-numero-secreto.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
 .mini-thumb-n8n     { background: linear-gradient(135deg, #9c1563, #e84393); }
 .mini-thumb-datos   { background: linear-gradient(135deg, #4b3aba, #7c6cff); }
 
@@ -1260,4 +1282,86 @@ footer {
   .tech-grid        { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
   .mini-card-thumb  { height: 70px; }
   .mini-thumb-logo  { width: 32px; height: 32px; }
+}
+/* ===== MODAL POPUP ===== */
+
+.modal {
+  display: none;
+
+  position: fixed;
+  z-index: 999;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.75);
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  backdrop-filter: blur(6px);
+}
+
+.modal-content {
+  position: relative;
+
+  width: 90%;
+  max-width: 1100px;
+
+  border-radius: 20px;
+  overflow: visible;
+
+  background: #111;
+
+  animation: popup 0.3s ease;
+}
+
+.modal-content img {
+  width: 100%;
+  display: block;
+
+  object-fit: cover;
+}
+
+.close-modal {
+  position: absolute;
+
+  top: -55px;
+  right: 18px;
+
+  color: var(--accent);
+  font-size: 42px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+  z-index: 1000;
+}
+body.light-mode .close-modal {
+  color: var(--accent);
+}
+.close-modal:hover {
+  transform: scale(1.1);
+}
+
+/* Animación */
+
+@keyframes popup {
+
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+
 }

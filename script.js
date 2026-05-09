@@ -400,5 +400,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
   });
-
 })();
+function openModal(imageSrc) {
+
+  document.getElementById("projectModal").style.display = "flex";
+
+  document.getElementById("modalImage").src = imageSrc;
+}
+
+function closeModal() {
+
+  document.getElementById("projectModal").style.display = "none";
+}
+window.onclick = function(event) {
+
+  const modal = document.getElementById("projectModal");
+
+  if (event.target === modal) {
+    closeModal();
+  }
+}
