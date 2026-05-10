@@ -615,11 +615,11 @@ git push
           <ul class="card-meta" role="list">
             <!--<li class="tag">Modelo estrella</li>-->
           </ul>
-          <h3 class="mini-card-title">Nombre del proyecto</h3>
-          <p class="mini-card-desc">Breve descripción del proyecto realizado.</p>
+          <h3 class="mini-card-title">Análisis Librería</h3>
+          <p class="mini-card-desc">Dashboard de analisis de ventas, plataforma en linea y cartera de clientes a empresa de libros BUSCANTE.</p>
           <div class="card-actions">
-            <a href="#" class="btn-sm btn-sm-primary">Ver más →</a>
-            <!--<a href="#" class="btn-sm btn-sm-ghost">GitHub</a>-->
+            <button class="btn-sm btn-sm-primary" onclick="openGallery(['assets/Dash-ecommerce-buscante.png', 'assets/Dash-ventas-buscante.png', 'assets/Dash-clientes-buscante.png'])" target="blank">Ver más →</button>
+            <a href="https://github.com/HectorzataraiN/Dashboard-libreria-BUSCANTE.git" class="btn-sm btn-sm-ghost" target="blank">GitHub</a>
           </div>
         </div>
       </article>
@@ -1278,6 +1278,7 @@ git push
       <a href="#" class="footer-social" title="Twitter / X" aria-label="Twitter">X</a>
     </nav>
   </footer>
+  
   <div id="projectModal" class="modal">
 
     <div class="modal-content">
@@ -1286,12 +1287,19 @@ git push
         &times;
       </span>
 
+      <button class="prev-btn" onclick="prevImage()">
+        ❮
+      </button>
+
       <img id="modalImage" src="" alt="Proyecto">
+
+      <button class="next-btn" onclick="nextImage()">
+        ❯
+      </button>
 
     </div>
 
   </div>
-
   <!-- Script cargado con defer para no bloquear el render -->
   <script src="script.js" defer></script>
 

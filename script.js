@@ -401,17 +401,80 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 })();
+let currentImages = [];
+let currentIndex = 0;
+
 function openModal(imageSrc) {
 
   document.getElementById("projectModal").style.display = "flex";
 
-  document.getElementById("modalImage").src = imageSrc;
+  currentImages = [imageSrc];
+  currentIndex = 0;
+
+  updateImage();
+
+  hideGalleryButtons();
+}
+
+function openGallery(images) {
+
+  document.getElementById("projectModal").style.display = "flex";
+
+  currentImages = images;
+  currentIndex = 0;
+
+  updateImage();
+
+  showGalleryButtons();
+}
+
+function updateImage() {
+
+  document.getElementById("modalImage").src =
+    currentImages[currentIndex];
+}
+
+function nextImage() {
+
+  currentIndex++;
+
+  if (currentIndex >= currentImages.length) {
+    currentIndex = 0;
+  }
+
+  updateImage();
+}
+
+function prevImage() {
+
+  currentIndex--;
+
+  if (currentIndex < 0) {
+    currentIndex = currentImages.length - 1;
+  }
+
+  updateImage();
 }
 
 function closeModal() {
 
   document.getElementById("projectModal").style.display = "none";
 }
+
+function showGalleryButtons() {
+
+  document.querySelector(".prev-btn").style.display = "block";
+
+  document.querySelector(".next-btn").style.display = "block";
+}
+
+function hideGalleryButtons() {
+
+  document.querySelector(".prev-btn").style.display = "none";
+
+  document.querySelector(".next-btn").style.display = "none";
+}
+
 window.onclick = function(event) {
 
   const modal = document.getElementById("projectModal");
