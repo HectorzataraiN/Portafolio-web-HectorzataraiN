@@ -1004,6 +1004,14 @@ body.light-mode .mini-card:hover { box-shadow: 0 8px 24px rgba(0, 155, 114, 0.1)
   background-position: center;
   background-repeat: no-repeat;
  }
+ .mini-thumb2-web     { 
+  background:
+  linear-gradient(rgba(176, 58, 18, 0.55),rgba(228, 77, 38, 0.55)),
+  url("assets/generador-dashboard.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
 .mini-thumb-n8n     { background: linear-gradient(135deg, #9c1563, #e84393); }
 .mini-thumb-datos   { background: linear-gradient(135deg, #4b3aba, #7c6cff); }
 
