@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Formacion Profesional de Hector Zatarain: licenciatura y nivel de ingles." />
+
+  <title>Formacion Profesional - Hector Zatarain</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ================================================
+       NAVBAR
+  ================================================ -->
+  <nav id="navbar" aria-label="Navegación principal">
+
+    <a href="index.html" class="nav-logo">
+      Hector<span>zataraiN</span>
+    </a>
+
+    <div class="nav-actions">
+
+      <button id="themeToggle" class="theme-btn" aria-label="Cambiar tema">
+        <img id="themeIcon" src="assets/day-night.png" class="theme-icon" />
+      </button>
+
+      <a href="assets/cv/CV Hector Zatarain Rocha..pdf" target="_blank" class="nav-cv">
+        Ver CV
+      </a>
+
+    </div>
+
+  </nav>
+
+  <!-- ================================================
+       FORMACION PROFESIONAL
+  ================================================ -->
+  <section id="formacion" aria-labelledby="formacion-title">
+
+    <p class="section-label">Formacion Profesional</p>
+    <h2 id="formacion-title" class="section-title">Licenciatura e ingles</h2>
+
+    <!-- Grid principal de tarjetas.
+         Usa la misma clase "projects-grid" del index para conservar el estilo,
+         la separacion y el comportamiento responsive de las tarjetas. -->
+    <div class="projects-grid">
+
+      <!-- Tarjeta 1: Formacion profesional.
+           Edita los tags, el titulo y la descripcion con los datos reales de tu licenciatura. -->
+      <article class="project-card reveal">
+
+        <!-- Imagen superior de la tarjeta.
+             "thumb-4" reutiliza uno de los fondos degradados definidos en styles.css. -->
+        <div class="card-thumb thumb-4" aria-hidden="true">
+
+          <!-- Contenedor interno que centra el icono y agrega la cuadricula decorativa. -->
+          <div class="card-thumb-inner">
+
+            <!-- Icono de la tarjeta.
+                 Puedes cambiar assets/office.png por otro archivo dentro de la carpeta assets. -->
+            <span class="thumb-icon">
+              <img src="assets/office.png" alt="Icono de formacion profesional">
+            </span>
+
+          </div>
+
+          <!-- Etiqueta flotante que destaca esta tarjeta. -->
+          <span class="card-tag-featured">Licenciatura</span>
+
+        </div>
+
+        <!-- Cuerpo de la tarjeta con etiquetas, titulo, descripcion y acciones. -->
+        <div class="card-body">
+
+          <!-- Etiquetas breves para resumir areas o habilidades de la licenciatura. -->
+          <ul class="card-meta" role="list">
+            <li class="tag">Universidad</li>
+            <li class="tag">Administracion</li>
+            <li class="tag">Analisis</li>
+          </ul>
+
+          <!-- Titulo principal de la tarjeta. -->
+          <h3 class="card-title">Licenciatura en Administracion</h3>
+
+          <!-- Descripcion editable de tu formacion profesional. -->
+          <p class="card-desc">
+            Espacio para describir tu formacion profesional, universidad, periodo de estudio,
+            enfoque academico y conocimientos relevantes para tu perfil.
+          </p>
+
+          <!-- Accion opcional.
+               Puedes cambiar el enlace al CV, a una constancia o eliminar este bloque si no lo necesitas. -->
+          <div class="card-actions">
+            <a href="assets/cv/CV Hector Zatarain Rocha..pdf" target="_blank" class="btn-sm btn-sm-primary">
+              Ver CV &rarr;
+            </a>
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- Tarjeta 2: Nivel de ingles.
+           Edita los tags, el nivel y la descripcion con tu informacion real. -->
+      <article class="project-card reveal reveal-delay-1">
+
+        <!-- Imagen superior de la tarjeta.
+             "thumb-2" reutiliza otro fondo del index para mantener variedad visual. -->
+        <div class="card-thumb thumb-2" aria-hidden="true">
+
+          <!-- Contenedor interno que mantiene centrado el indicador visual. -->
+          <div class="card-thumb-inner">
+
+            <!-- Indicador textual de idioma.
+                 No depende de una imagen externa, por eso es facil de mantener. -->
+            <span class="thumb-icon">EN</span>
+
+          </div>
+
+          <!-- Etiqueta flotante que identifica el contenido de la tarjeta. -->
+          <span class="card-tag-featured">Idioma</span>
+
+        </div>
+
+        <!-- Cuerpo de la tarjeta con etiquetas, titulo, descripcion y acciones. -->
+        <div class="card-body">
+
+          <!-- Etiquetas breves para resumir capacidades del idioma ingles. -->
+          <ul class="card-meta" role="list">
+            <li class="tag">Lectura tecnica</li>
+            <li class="tag">Comunicacion</li>
+            <li class="tag">Profesional</li>
+          </ul>
+
+          <!-- Titulo principal de la tarjeta. -->
+          <h3 class="card-title">Ingles</h3>
+
+          <!-- Descripcion editable de tu nivel de ingles. -->
+          <p class="card-desc">
+            Espacio para colocar tu nivel de ingles, certificacion si cuentas con ella,
+            experiencia usando el idioma y contexto profesional o academico.
+          </p>
+
+          <!-- Accion opcional.
+               Puedes enlazar aqui una certificacion de idioma o dejarlo como referencia al CV. -->
+          <div class="card-actions">
+            <a href="assets/cv/CV Hector Zatarain Rocha..pdf" target="_blank" class="btn-sm btn-sm-primary">
+              Ver CV &rarr;
+            </a>
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+    <div class="cert-back">
+      <a href="index.html" class="btn btn-outline">← Volver al portafolio</a>
+    </div>
+
+  </section>
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer role="contentinfo">
+    <div class="footer-logo" aria-label="Héctor Zatarain">Hector<span>zataraiN</span></div>
+    <p class="footer-copy">© 2026 Héctor Zatarain. Construido con ♥ y demasiado café.</p>
+    <nav class="footer-socials" aria-label="Redes sociales">
+      <a href="https://github.com/HectorzataraiN" class="footer-social" title="GitHub" aria-label="GitHub">GH</a>
+      <a href="https://www.linkedin.com/in/hector-zatarain-572745275/" class="footer-social" title="LinkedIn" aria-label="LinkedIn">in</a>
+      <a href="#" class="footer-social" title="Twitter / X" aria-label="Twitter">X</a>
+    </nav>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+</body>
+</html>

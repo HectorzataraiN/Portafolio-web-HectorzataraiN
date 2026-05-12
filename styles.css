@@ -1012,6 +1012,14 @@ body.light-mode .mini-card:hover { box-shadow: 0 8px 24px rgba(0, 155, 114, 0.1)
   background-position: center;
   background-repeat: no-repeat;
  }
+  .mini-thumb3-web     { 
+  background:
+  linear-gradient(rgba(176, 58, 18, 0.55),rgba(228, 77, 38, 0.55)),
+  url("assets/memorama.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
 .mini-thumb-n8n     { background: linear-gradient(135deg, #9c1563, #e84393); }
 .mini-thumb-datos   { background: linear-gradient(135deg, #4b3aba, #7c6cff); }
 
@@ -1400,4 +1408,137 @@ body.light-mode .close-modal {
     transform: scale(1);
   }
 
+}
+
+/* ==========================================================================
+   SECCIÓN FORMACIÓN PROFESIONAL
+   ========================================================================== */
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.cert-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cert-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.cert-thumb {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg3);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.cert-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cert-title {
+  font-family: var(--font-head);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.cert-date {
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.cert-desc {
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.education-section,
+.languages-section {
+  margin-bottom: 3rem;
+}
+
+.subsection-title {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.education-card,
+.language-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  transition: var(--transition);
+}
+
+.education-card:hover,
+.language-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.education-header,
+.language-header {
+  margin-bottom: 1rem;
+}
+
+.education-title,
+.language-name {
+  font-family: var(--font-head);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.education-institution,
+.language-level {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.education-date {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.education-desc,
+.language-desc {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.cert-back {
+  text-align: center;
+  margin-top: 3rem;
 }

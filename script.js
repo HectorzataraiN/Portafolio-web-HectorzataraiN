@@ -291,16 +291,22 @@ const ContactForm = (() => {
    * Maneja el envío del formulario
    * event.preventDefault() evita recargar la página
    */
-document.getElementById("contactForm").addEventListener("submit", function () {
-  const btn = document.getElementById("submitBtn");
+  // Busca el formulario solo en las paginas donde existe.
+  // formacion.html no tiene formulario, asi que esta validacion evita errores.
+  const contactForm = document.getElementById("contactForm");
 
-  btn.textContent = "Enviando...";
-  btn.disabled = true;
+  if (contactForm) {
+    contactForm.addEventListener("submit", function () {
+      const btn = document.getElementById("submitBtn");
 
-  setTimeout(() => {
+      btn.textContent = "Enviando...";
+      btn.disabled = true;
+
+      setTimeout(() => {
     btn.textContent = "Mensaje enviado ✔";
-  }, 800);
-});
+      }, 800);
+    });
+  }
 
 
   function init() {
