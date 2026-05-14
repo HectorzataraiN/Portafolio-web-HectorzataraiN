@@ -72,7 +72,7 @@
             <!-- Icono de la tarjeta.
                  Puedes cambiar assets/office.png por otro archivo dentro de la carpeta assets. -->
             <span class="thumb-icon">
-              <img src="assets/uas.png" alt="Icono de formacion profesional">
+              <img src="assets/uas.png" alt="Icono de formacion profesional" class="icon-uas">
             </span>
 
           </div>
@@ -123,7 +123,7 @@
 
             <!-- Indicador textual de idioma.
                  No depende de una imagen externa, por eso es facil de mantener. -->
-            <span class="thumb-icon2"><img src="assets/ingles.png" alt="Imagen de una persona que habla inglés"></span>
+            <span class="thumb-icon2"><img src="assets/ingles.png" alt="Imagen de una persona que habla inglés" class="icon-ingles"></span>
 
           </div>
 
@@ -175,7 +175,7 @@
             <!-- Icono de la tarjeta.
                  Puedes cambiar assets/office.png por otro archivo dentro de la carpeta assets. -->
             <span class="thumb-icon">
-              <img src="assets/uas.png" alt="Icono de formacion profesional">
+              <img src="assets/alura.png" alt="Icono de formacion profesional" class="icon-datos">
             </span>
 
           </div>
@@ -194,19 +194,20 @@
           </ul>-->
 
           <!-- Titulo principal de la tarjeta. -->
-          <h3 class="card-title">Licenciatura en Negocios y Comercio Internacional</h3>
+          <h3 class="card-title">Análisis de datos</h3>
 
           <!-- Descripcion editable de tu formacion profesional. -->
-          <p class="card-desc">
-            Univerdad Autónoma de Sinaloa en la Facultad de Contaduría y Administración.
-          </p>
+          <ul class="card-desc">
+            <li>SQL - Alura Latam</li>
+            <li>Python - Alura Latam</li>
+          </ul>
 
           <!-- Accion opcional.
                Puedes cambiar el enlace al CV, a una constancia o eliminar este bloque si no lo necesitas. -->
           <div class="card-actions">
-            <a href="https://www.google.com/maps/place/Facultad+de+Contadur%C3%ADa+y+Administraci%C3%B3n/@24.8287708,-107.3856953,17z/data=!3m1!4b1!4m6!3m5!1s0x86bcd9f78db99cc7:0x4553492a7fb2925e!8m2!3d24.8287708!4d-107.3831257!16s%2Fg%2F11c55rj66_?entry=ttu&g_ep=EgoyMDI2MDUxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-sm btn-sm-primary">
-              Ubicación &rarr;
-            </a>
+            <div class="card-actions">
+              <button class="btn-sm btn-sm-primary" onclick="openGallery(['assets/constancia-sql1.png', 'assets/constancia-python1.png'])">Ver más →</button>
+            </div>
           </div>
 
         </div>
@@ -226,7 +227,7 @@
             <!-- Icono de la tarjeta.
                  Puedes cambiar assets/office.png por otro archivo dentro de la carpeta assets. -->
             <span class="thumb-icon">
-              <img src="assets/uas.png" alt="Icono de formacion profesional">
+              <img src="assets/alura.png" alt="Icono de formacion profesional" class="icon-frontend">
             </span>
 
           </div>
@@ -245,18 +246,17 @@
           </ul>-->
 
           <!-- Titulo principal de la tarjeta. -->
-          <h3 class="card-title">Licenciatura en Negocios y Comercio Internacional</h3>
+          <h3 class="card-title">FrontEnd / Desarrollo Web</h3>
 
           <!-- Descripcion editable de tu formacion profesional. -->
           <p class="card-desc">
-            Univerdad Autónoma de Sinaloa en la Facultad de Contaduría y Administración.
+            JavaScript, HTML y CSS - Alura Latam.
           </p>
 
           <!-- Accion opcional.
                Puedes cambiar el enlace al CV, a una constancia o eliminar este bloque si no lo necesitas. -->
           <div class="card-actions">
-            <a href="https://www.google.com/maps/place/Facultad+de+Contadur%C3%ADa+y+Administraci%C3%B3n/@24.8287708,-107.3856953,17z/data=!3m1!4b1!4m6!3m5!1s0x86bcd9f78db99cc7:0x4553492a7fb2925e!8m2!3d24.8287708!4d-107.3831257!16s%2Fg%2F11c55rj66_?entry=ttu&g_ep=EgoyMDI2MDUxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-sm btn-sm-primary">
-              Ubicación &rarr;
+            <button class="btn-sm btn-sm-primary" onclick="openGallery(['assets/constancia-javascript1.png', 'assets/constancia-programacion1.png'])">Ver más →</button>
             </a>
           </div>
 
@@ -283,7 +283,27 @@
       <a href="#" class="footer-social" title="Twitter / X" aria-label="Twitter">X</a>
     </nav>
   </footer>
+  <div id="projectModal" class="modal">
 
+    <div class="modal-content">
+
+      <span class="close-modal" onclick="closeModal()">
+        &times;
+      </span>
+
+      <button class="prev-btn" onclick="prevImage()">
+        ❮
+      </button>
+
+      <img id="modalImage" src="" alt="Proyecto">
+
+      <button class="next-btn" onclick="nextImage()">
+        ❯
+      </button>
+
+    </div>
+
+  </div>
   <!-- Scripts -->
   <script src="script.js"></script>
 
