@@ -1122,6 +1122,14 @@ body.light-mode .mini-card:hover { box-shadow: 0 8px 24px rgba(0, 155, 114, 0.1)
   background-position: center;
   background-repeat: no-repeat;
 }
+.mini-thumb5-powerbi { 
+  background:
+    linear-gradient(rgba(242, 200, 17, 0.55),rgba(201, 163, 0, 0.55)),
+    url("assets/dashboard-ecommerce.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .mini-thumb-sap     { background: linear-gradient(135deg, #004a8f, #0070d1); }
 .mini-thumb1-web     { 
   background:
